@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr; /*Pongo 5fr para que el content use 6fr y el aside solo 1fr*/
+
+    grid-template-areas: /*Esto es para definir las areas */
+    "header header header" /*Aqui lo que hago es que son 3 columnas de las cuales en la primera fila el header usa todas las columnas para que asi ocupe todo el ancho*/
+    "aside content content" /*La segunda fila quiero que sea el aside ocupando 1 columna y el content 2 ya que es mas importante*/
+    "footer footer footer ";
+
+    /*Si por ejemlo quiero que el header solo use 2 columnas y la tercera columna no haya nada sería ponerle un punto en la tercera columna:
+    "header header . " */
+
+    grid-template-rows: 60px 1fr 50px; /*Esto es para que el header use una fila de 60px de ancho , el footer 50px y el content y aside todo lo demas  */
+
+    min-height: 100vh; /*Para que el alto ocupe toda la pantalla . Vh es viewport que es lo que se ve en la pantalla*/
+}
+
+
+.header{
+    background-color: blue;
+    grid-area: header; /*El grid-area es para decir que va a ser header en el grid-template areas*/
+}
+
+.aside{
+    background-color: yellow;
+    grid-area: aside;
+}
+
+.content{
+    background-color: red;
+    grid-area: content;
+}
+
+.footer{
+    background-color: gray;
+    grid-area: footer;
+}
