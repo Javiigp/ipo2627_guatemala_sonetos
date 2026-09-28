@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sonetos Guatemala</title>
+
+
+    <!-- CSS modo claro -->
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+
+    <!-- CSS modo oscuro -->
+    <link
+        rel="stylesheet"
+        href="/css/dark.css"
+        id="darkTheme"
+        disabled
+    >
+
+</head>
+
+
+<body>
+
+
+    <section class="body">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <h1>Sonetos</h1>
+
+            <button class="boton">
+                Oscuro/Claro
+            </button>
+
+        </header>
+
+
+
+
+        <!-- ASIDE -->
+
+        <aside class="aside">
+
+            <nav
+                class="CajaAside"
+                id="listaSonetos"
+            >
+
+                <!--
+                    JavaScript introducirá aquí
+                    automáticamente los sonetos.
+                -->
+
+            </nav>
+
+        </aside>
+
+
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <main class="content">
+
+
+            <h1
+                class="nombreSoneto"
+                id="nombreSoneto"
+            >
+            </h1>
+
+
+
+            <section class="cajaSoneto">
+
+
+                <article class="texto">
+
+
+                    <div>
+
+                        <strong
+                            id="tituloSoneto"
+                        >
+                        </strong>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <strong
+                            id="autorSoneto"
+                        >
+                        </strong>
+
+                    </div>
+
+
+
+                    <strong>
+                        Soneto
+                    </strong>
+
+
+
+                    <div
+                        class="poema"
+                        id="poema"
+                    >
+
+                        <!--
+                            JavaScript introducirá
+                            aquí las estrofas.
+                        -->
+
+                    </div>
+
+
+                </article>
+
+
+            </section>
+
+
+        </main>
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            Grupo Guatemala-IPO
+
+        </footer>
+
+
+    </section>
+
+
+
+    <!--
+        Controller es el punto de entrada
+        de nuestra aplicación.
+
+        type="module" nos permite utilizar
+        import y export.
+    -->
+
+    <script
+        type="module"
+        src="/javascript/controller.js"
+    >
+    </script>
+
+
+</body>
+
+</html>
