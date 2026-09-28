@@ -1,9 +1,3 @@
-// =========================
-// VIEW
-// =========================
-
-
-// Elementos del HTML
 const listaSonetos = document.querySelector('#listaSonetos');
 
 const nombreSoneto = document.querySelector('#nombreSoneto');
@@ -12,7 +6,6 @@ const autorSoneto = document.querySelector('#autorSoneto');
 const poema = document.querySelector('#poema');
 
 
-// Muestra la lista de sonetos en el aside
 export function mostrarListaSonetos(sonetos) {
 
     listaSonetos.replaceChildren();
@@ -34,7 +27,6 @@ export function mostrarListaSonetos(sonetos) {
 }
 
 
-// Muestra el soneto seleccionado
 export function mostrarSoneto(soneto) {
 
     nombreSoneto.textContent = soneto.nombre;
@@ -46,11 +38,11 @@ export function mostrarSoneto(soneto) {
         `Autor: "${soneto.autor}"`;
 
 
-    // Eliminamos el poema anterior
+    
     poema.replaceChildren();
 
 
-    // Creamos las estrofas
+    
     soneto.estrofas.forEach(function(estrofa) {
 
         const parrafo = document.createElement('p');
@@ -63,7 +55,7 @@ export function mostrarSoneto(soneto) {
             parrafo.appendChild(textoVerso);
 
 
-            // Añadimos salto de línea salvo en el último verso
+            
             if (posicion < estrofa.length - 1) {
 
                 parrafo.appendChild(

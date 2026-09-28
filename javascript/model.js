@@ -1,8 +1,4 @@
-// =========================
-// MODEL
-// =========================
 
-// Almacén de sonetos
 const sonetos = [
 
     {
@@ -187,13 +183,13 @@ const sonetos = [
 ];
 
 
-// Devuelve todos los sonetos
+
 export function obtenerSonetos() {
     return sonetos;
 }
 
 
-// Devuelve un soneto según su id
+
 export function obtenerSonetoPorId(id) {
 
     return sonetos.find(function(soneto) {
